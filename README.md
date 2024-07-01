@@ -15,7 +15,7 @@ This fork implements the following changes:
 - My resume content (of course...),
 - Trimming boilerplate files, and
 - Implementing a GitHub Action to build and publish exported resume PDF to the latest release.
-  The Action is triggered when a tag is pushed on main.
+  The Action is triggered when a new tag is pushed.
 
 
 ## License
