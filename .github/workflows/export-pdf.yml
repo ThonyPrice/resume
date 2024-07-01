@@ -26,7 +26,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: example/cv.tex
+          working_directory: example
+          root_file: cv.tex
           extra_fonts: fonts/*.otf
           latexmk_use_lualatex: true
       - name: Upload PDF file
