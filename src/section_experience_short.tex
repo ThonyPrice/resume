@@ -1,0 +1,276 @@
+% YAAC Another Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/yaac-another-awesome-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%Section: Work Experience at the top
+\sectionTitle{Experience}{\faSuitcase}
+%\renewcommand{\labelitemi}{$\bullet$}
+\begin{experiences}
+
+    \experience
+    {Q1 2023}   
+    {Senior Backend Engineer}
+    {Facade - Integration Engine}
+    {Gilion (prev. Ark Kapital)}
+    {Q2 2024} {
+    
+        Gilion (previously Ark Kapital) is the next generation of lender to scaleups and tech companies.
+        They use their frontier growth forecasting engine to offer long loans based on future cash flows and give their insights back to customers in a gorgeous dashboard.
+        While signing up for AIM is a requirement when applying for a loan, they also offer the growth forecasting platform for free to any founder to use.
+        \newline \newline
+        AIM is the financial platform that is used internally to assess potential loan customers, but also presented to the company founders to give them invaluable insights about their companies.
+        This is done by having users connect their data to the platform, running a set of analyses on said data, and then visualizing their data together with forecasts back to the user in a way that is educational and easy to understand.
+        Thony was brought in to strengthen the backend integrations team.
+        Gilion needed a developer to quickly grasp the product requirements and build a future proof backend where new data sources could be integrated seamlessly by customers.
+        \newline \newline
+        Thony had the lead role in developing the integration engine (Facade) during his time at Gilion.
+        He automated multiple steps in the data ingestion process effectively decimating the time it took for customers to get insights after they've connected their data sources.
+        Furthermore, as the most senior developer he had a lasting impact in guiding the team to better practices.
+        Both in the backend domain and the data domain of the product.
+        \newline
+    }
+    {Python, FastAPI, Kubernetes, GCP, ArgoCD, Argo Workflows, Kubernetes, Terraform, PostgreSQL, API design, Swagger, Microservices Architecture, GitHub Actions}
+    \emptySeparator
+    
+    \experience
+    {Q4 2022}   
+    {Senior Backend Engineer}
+    {Streams API Migration}
+    {Moralis Web3 Technology AB}
+    {Q4 2022} {
+    
+        Moralis is a leading Web3 development platform that enables developers to create, launch and grow great decentralized applications. 
+        It aggregates APIs, streams, educational content, and more across multiple blockchains to provide Web3 interoperability for 100k+ users.
+        \newline \newline
+        One major component of Moralis' SDK is the Streams API. 
+        It enables users to receive webhooks for events on various blockchains. 
+        For example, when an address sends, receives, swaps, or burns assets such as NFTs or cryptocurrency.
+        \newline \newline
+        The Streams API on Moralis' side is complex.
+        It includes polling different chains, decoding smart contracts, caching events, facilitating queues, opening streams, tracking requests, and more.
+        As the complexity grew the monolith code base reached a state where it became hard to manage and make changes.
+        \newline \newline
+        Thony joined the project as a senior backend developer to refactor the codebase into NestJS microservices.
+        Adapting quickly to the remote and asynchronous ways of working he managed to improve team culture as well as deliver on the project.
+        He familiarized himself with the system, identified, and prioritized changes required to incrementally reduce code complexity, and implement a microservice pattern. 
+        The outcome was a refactored code base with a common framework which enabled more developers at Moralis to make changes safer and faster to increase the value delivered to their customers.
+        \newline
+    }
+    {NestJS, TypeScript, Microservices, Jest, Apache Kafka, RabbitMQ, API
+Development, ORM, Mongoose, Sequelize, Node.js, npm, Docker, GitLab, GitLab CI,
+Asynchronous Work}
+    \emptySeparator
+    
+    \experience
+    {Q3 2021}   
+    {Fullstack Developer | Infra Engineer | Team Lead}
+    {CareOS}
+    {ABC Labs AB}
+    {Q4 2022} {
+        ABC Labs is a HealthTech company working with laboratory analyses and health care software solutions, founded in 2020 as a response to the Covid-19 breakout. 
+        During the pandemic, they were analyzing up to 25\% of Sweden's Covid-19 samples every week. 
+        ABC Labs' aim is to be highly data driven and always work with new and scalable technical solutions.
+        \newline \newline
+        CareOS is at its core an integration platform for laboratories and healthcare providers.
+        It provides value in seamless integrations, high-quality data, and full traceability throughout the domain.
+        \newline \newline
+        Thony joined ABC Labs at a stage when they started to outgrow their initial tech setup and required new scalable and future-proof solutions to keep up and continue to grow.
+        Thony was tasked to design and implement an integration engine that enabled the client to nimbly add applications required for internal processes and integrations with healthcare actors.
+        Thony played a key role in the domain-driven design and event-sourcing decisions to design the system.
+        Based on this design, he drove the implementation of an integration platform with a microservice architecture that served as a foundation for ABC Labs to develop and deploy services to.
+        Furthermore, he single-handedly configured continuous integration and deployments, Kubernetes production and staging clusters, secret manager, and more to create environments where everything could run. 
+        When Thony left ABC Labs they were running tens of applications continuously providing value to their customers and had a system design, hosting environment, and more to accelerate their development on.
+        \newline
+    }
+    {Kubernetes, ArgoCD, GitOps, DevOps, Github Actions CI/CD, Kustomize, Helm, Secret Management, Architecture, Docker, Event Sourcing, Domain Driven Design (DDD), Apache Kafka, TypeScript, Nest.js, Node.js, Turborepo, Team Lead, YAML, NGINX, Let's Encrypt, Elasticsearch, Kibana, Filebeat, Keycloak, PostGreSQL, Redis, MongoDB, Vue.js, Webpack, Vite, Jest, Stakeholder management, Scrum Master, User Story Mapping, JIRA, Confluence, Bash Script, Microservices, Snyk, CVE, CVSS}
+    \emptySeparator
+    
+    \experience
+    {Q2 2021}   
+    {Data Engineer}
+    {Real time sales analytics}
+    {Matsmart AB}
+    {Q3 2021} {
+
+        Matsmart is an e-commerce company that challenges the thought of sustainable consumption.
+        They want everyone to be able to contribute to saving our planet in an effortless way, and their idea is to revolutionize how we all look upon food waste. Matsmart is in the business of taking care of already produced surplus goods and selling it online at affordable prices to customers who want to buy perfectly good food that otherwise would have gone to waste.
+        \newline \newline
+        Because Matsmart resells surplus goods the available products and their quantity change rapidly on a day-to-day basis.
+        To track these changes they needed a lightweight solution to enable both their sales staff and warehouse personell to make data-driven decisions on fresh data.
+        \newline \newline
+        Building upon existing infrastructure Thony proposed and implemented a separate data stream from Azure to an instance of the Elastic Stack.
+        He set deployed and configured Elasticsearch, Kibana, and Logstash which allowed users at Matsmart a self-service interface to fetch live data about products they're interested in.
+        This replaces the previous method of awaiting a daily report job that took hours.
+        In conclusion, it allowed Matsmart to make more data-driven product adjustments to increase margins.
+        \newline
+    }
+    {Elasticsearch, Kibana, Logstash, Azure}
+    \emptySeparator
+    
+    \experience
+    {Q3 2020}   
+    {Fullstack Developer}
+    {Care Procedure Codes Portal}
+    {Appva AB}
+    {Q1 2021} {
+    
+        Appva is Sweden’s largest provider of medication and support system for municipal care possessing about 50\% of the market.
+        They started in 2012 to digitalize the paper-based workflow of elderly care.
+        Since then, they have experienced heavy growth and now enables 100.000 daily users to perform their tasks easier and more safely.
+        \newline \newline
+        Appva had developed a system that labeled care procedures with a code according to Socialstyrelsen’s required reporting format.
+        Reports were generated but an interface for sharing them with users was missing.
+        Since the reports contain patient data, the primary requirements for the interface revolved around safe data handling, and reliable authorization with good usability.
+        \newline \newline
+        Thony joined the team as a fullstack developer with the objective of delivering a stand-alone service with a web user interface where they could manage and share reports with users.
+        He was responsible for the architecture so that it was aligned with the company's current ecosystem, stakeholder management so that all current requirements were addressed and future ones could be resolved without major re-factorization, as well as all of the development.
+        Working agile he delivered a web app with robust authentication, responsive design, and a solid foundation for future feature development.
+        All in all, the delivered solution provided a high level of security while being scalable to future user needs.
+        \newline
+    }
+    {Architecture, .NET Core, C\#, Razor, Bootstrap, Swagger, OIDC, SAML, Keycloak, Docker, PostGreSQL, Kubernetes, Travis, Seq, XUnit}
+    \emptySeparator
+    
+    \experience
+    {Q1 2020}   
+    {Project Manager | Thesis Supervisor}
+    {Text Classification}
+    {Appva AB}
+    {Q2 2020} {
+    
+        Appva is Sweden’s largest provider of medication and support system for municipal care possessing about 50\% of the market.
+        They started in 2012 to digitalize the paper-based workflow of elderly care.
+        Since then, they have experienced heavy growth and now enables 100.000 daily users to perform their tasks easier and more safely.
+        \newline \newline
+        Appva had already a text classification service that takes a care procedure as an input, then serves a care procedure code suggestion as an output.
+        The accuracy of the service had some room for improvement and due to the little training data, an unsupervised approach was considered.
+        This was considered a good fit for a student research project where the goal was an evaluation of alternative solutions and a minimum viable product for one of them.
+        \newline \newline
+        As a project manager Thony had the responsibility to recruit students, provide them with a sufficient understanding of the problem at hand, and guide them through his expertise in data science.
+        During the project, he set milestones for them to achieve and tracked their daily progress through an agile workflow.
+        He had frequent check-ins with stakeholders to ensure the projected delivery was valuable to the company.
+        The final result was a comprehensive report on various solution alternatives as well as a model that outperformed the current implementation.
+        This material provided a solid basis for Appva's continued development of the service.
+        \newline
+    }
+    {Python, Scrum Master, Product Owner, Project Manager, Supervisor, Kanban}
+    \emptySeparator   
+    
+    \experience
+    {Q4 2019}   
+    {Backend Developer}
+    {3rd Line Support}
+    {Appva AB}
+    {Q1 2021} {
+    
+        Appva is Sweden’s largest provider of medication and support system for municipal care possessing about 50\% of the market.
+        They started in 2012 to digitalize the paper-based workflow of elderly care. Since then, they have experienced heavy growth and now enables 100.000 daily users to perform their tasks easier and more safely.
+        \newline \newline
+        With continuous growth of end-user as well as features, Appva's support team had a steady influx of tickets.
+        The 3rd line support is responsible for determining root causes, reproducing, and resolving issues.
+        Naturally, the issues varied in complexity as well as what system they occur in albeit a majority was originating from the databases.
+        \newline \newline
+        Thony joined the support team as a backend developer with the purpose of lowering lead times for support tickets.
+        He took charge of aggregating issues, identifying recurring parts and core issues of different systems, then bring forth a solution that addressed a set of problems.
+        Through his communicative skills and extensive knowledge sharing the team has built a repository of queries and scripts for diagnosing and fixing common problems.
+        Since Thony joined the support team the time from reported issue to resolved issue has decreased significantly which in turn made utilization of resourced more efficient.    
+        \newline
+    }
+    {MSSQL, .NET Framework, .NET Core, IIS, XUnit, Seq, Kubernetes, Ceph,
+Prometheus, Grafana}   
+    \emptySeparator            
+    
+    \experience
+    {Q3 2019}   
+    {SRE | DevOps Engineer}
+    {Data Center Migration}
+    {Appva AB}
+    {Q4 2019} {
+        Appva is Sweden’s largest provider of medication and support system for municipal care possessing about 50\% of the market.
+        They started in 2012 to digitalize the paper-based workflow of elderly care.
+        Since then, they have experienced heavy growth and now enables 100.000 daily users to perform their tasks easier and more safely.
+        \newline \newline
+        Appva had outgrown their current data center and needed a provider that could deliver more redundancy and higher Service level agreements.
+        Due to the critical nature of a medical system no downtime was accepted during the migration.
+        \newline \newline
+        Thony’s role as a backend developer was to engage in the setup of a new Kubernetes cluster and move a set of .NET Core adapted microservices into it.
+        Besides containerizing .NET applications and setting up multiple nodes in the cluster, he also added a storage cluster through Ceph and monitoring using Prometheus and Grafana.
+        The migration was a success with zero downtime and post the migration the setup ran stable.
+        The monitoring tools continued to add value as they are regularly checked to assess the system's health.
+        Hence, the project has also provided a solid foundation for further development of the company's cluster-based hosting.
+        \newline
+    }
+    {Docker, Kubernetes, Helm, Harbour, Ansible, Bash, Linux, CentOS, Travis, Prometheus, Ceph, Grafana, .NET Core, Microservices, CI/CD, Microsoft SQL Server, Redundancy, SLA}
+    \emptySeparator
+    
+    \experience
+    {Q1 2019}   
+    {Data Scientist}
+    {CGM Monitoring Data Discovery}
+    {Steady Health}
+    {Q2 2019} {
+        Steady Health is a diabetes clinic that process data glucose sensors to provide personalized data-oriented care.
+        They work to modernize diabetes care by offering patients online tools to manage blood sugar as well as professional advice and insights based on the data.
+        \newline \newline
+        Beginning of 2019 Steady Health was a 6-month-old startup and their pipeline for delivering diabetes insights and advice relied on manual data inspection.
+        One of the most interesting data to review is meal consumption, in particular carbohydrate intake.
+        The overarching goal of the project was a tool that could detect meals from a glucose signal to aid endocrinologists in their data analysis.
+        \newline \newline
+        In the role as a data scientist, Thony was responsible for due diligence on the available data, researching solution strategies, building the tool, and reviewing its performance.
+        The available data motivated an unsupervised model which was built as a representation of the glucose regulatory system.
+        It was evaluated against manual data annotations and delivered a 95\% accuracy on meal detection and 20\% error margin on carbohydrate content which was well within the margin of the company's requirements.
+        This meant a lot of time was saved on manual annotations and they could direct time into more complex insights to increase product value.
+        \newline
+    }
+    {Python, LaTeX, Google Colab, PCA, Alpha-Beta filters, Wavelets, Jupyter Notebook, Jupyter, pandas}  
+    \emptySeparator
+    
+    \experience
+    {Q2 2017}   
+    {Backend Developer}
+    {Centralized Log Monitoring}
+    {Offerta AB}
+    {Q3 2017} {
+
+        Offerta is a service broker that allows customers to submit a work description e.g. a home renovation, then receive quotations from companies to find the best firm and offer for the quoted work.
+        They are Sweden's largest service provider in this category.
+        \newline \newline
+        Offerta used the conversion rate metric of their website frequently to drive both development and business decisions.
+        They needed a new tool to handle their logs in a more structured way and to easily derive meaningful insights in a way that usage of the tool was not limited to just developers.
+        \newline \newline
+        As a backend developer, Thony's contribution was to develop a solution based on the ELK stack which he advocated for due to the usability of Kibana for visualizing insights.
+        The service parsed IIS and .NET logs and through the aggregated data it could answer conversion questions like the most frequent drop-out pages, how many quotations users reviewed before accepting one, etc.
+        A set of dashboards was also set up to monitor failed requests and initiate escalation.
+        The service provided business value for Offerta in the form of an easy-to-use system for many applications, in particular customer insights.
+        \newline
+    }
+    {Kibana, Elasticsearch, Logstash, IIS, Monitoring, Infrastructure Monitoring}  
+    \emptySeparator
+    
+    \experience
+    {Q2 2017}   
+    {Fullstack Developer}
+    {Staff Management Tool}
+    {Globuzzer}
+    {Q4 2017} {
+        Globuzzer is a social network for expatriates where members of the community can write, read, and share articles with information specifically useful for someone new in a city abroad.
+        They have 180.000 users all over the world.
+        \newline \newline
+        Globuzzer was a one-year-old startup and had grown to a staff of 20 people spread around the globe when they realized their need for an internal tool for handling their staff.
+        Specifically manage staff roles, track written articles, and track staff information.
+        \newline \newline
+        Thony worked closely with the key stakeholders of the company to first set the requirements of the project.
+        Later, he developed a design in Figma which was further developed to a full-fledged web app using PHP, HTML, JavaScript, and CSS.
+        It had a user view so everyone in the company could view and connect with colleges, but also an admin view to edit the content.
+        The simplicity of the web app made it a core tool of Globuzzer's ecosystem which is used daily years later to make staff management an easier task.
+        \newline
+    }
+    {Javascript, Figma, PHP, HTML, Sass, XAMPP}  
+    
+\end{experiences}

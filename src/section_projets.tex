@@ -1,0 +1,51 @@
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+%Section: Project
+\sectionTitle{Passion Projects}{\faLaptop}
+
+\begin{projects}
+
+	\project
+	{Home Operations Cluster}{2022 - Now}
+    { \github{ThonyPrice/home-ops} }
+    {
+        To create a playground for learning more about Cloud and Infrastructure Thony runs a production-grade Kubernetes cluster on old hardware at home.
+        The deployments include home automation tasks, a media server, and a few websites, monitoring, logging, etc. This has provided multiple challenges for learning and practicing networking, routing, cluster management, security, secret management, and automation.
+    }
+	{Proxmox, k3s, Prometheus, Grafana, NAS, Let's Encrypt, Networking}
+
+    \iffalse
+    % ------------
+	\project
+	{Thony Price Blog/Homepage}{2023 - Now}
+	{
+        \github{ThonyPrice/blog}
+        \website{https://www.thonyprice.com}{https://www.thonyprice.com}
+    }
+	{
+        Homepage to gather information, projects, and stray thoughts.
+    }
+	{Hugo, Make, Emacs, Netlify, Github Actions}
+    % ------------
+    \fi
+
+	\project
+	{Automated System Configuration}{2022 - Now}
+	{\github{ThonyPrice/nix-config}}
+    {
+        Being very passionate about development tools and customization Thony contentiously spend time perfecting system configuration such as Emacs, window managers and vim configurations.
+        This led him to investigate a structured approach to optimize his tools and environments in a reproducible manner.
+        The result is a dotfiles repository which makes it possible to recreate and sync a personalized productivity environment with a few custom terminal commands.
+    }
+    {Nix, Emacs, Vim, WMs, X11, Wayland}
+ 
+\end{projects}
