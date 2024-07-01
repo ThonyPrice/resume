@@ -1,20 +1,21 @@
 # Resume - Thony Price
 
 This repository holds my resume.
-It's built with LaTeX and exported as an PDF available to download in the /Releases/.
+It is built with LaTeX and exported as a PDF that is available for download in the repository **Releases**.
 
-https://github.com/thonyprice/resume/releases/latest/download/cv.pdf
+**:arrow_down: Download latest version: https://github.com/thonyprice/resume/releases/latest/download/cv.pdf**
 
 
 ## About
 
-Credit to @darwiin who is the author of the LaTeX template used.
+Credit to **@darwiin** who is the author of the LaTeX template this repo is forked from.
 The template, along with detailed instruction on how to use ut, is available at https://github.com/darwiin/yaac-another-awesome-cv
 
 This fork implements the following changes:
 - My resume content (of course...),
 - Trimming boilerplate files, and
-- Implementing GitHub Action to build and publish PDF to a release _when_ a tag is pushed.
+- Implementing a GitHub Action to build and publish exported resume PDF to the latest release.
+  The Action is triggered when a tag is pushed on main.
 
 
 ## License

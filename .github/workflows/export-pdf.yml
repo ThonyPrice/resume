@@ -1,6 +1,9 @@
 # name: GitHub Actions Demo
 run-name: Build LaTeX and Relase Exported PDF
-on: [push]
+on:
+  push:
+    tags:
+      - "*"
 jobs:
   build_and_release:
     runs-on: ubuntu-latest
@@ -16,7 +19,6 @@ jobs:
           latexmk_use_lualatex: true
       - name: Add exported PDF to latest release
         uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: src/cv.pdf
           make_latest: true
